@@ -1,0 +1,44 @@
+### Register User
+POST http://localhost:8000/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "123456"
+}
+
+### Login User
+POST http://localhost:8000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "123456"
+}
+
+### Get Tasks (with token)
+GET http://localhost:8000/api/tasks?status=all&page=1&limit=5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2EyYjcyZjM0NDhjZTViYTE1Yzc0YSIsImlhdCI6MTc1ODA4MDA2OSwiZXhwIjoxNzU4MTY2NDY5fQ.vp-ivWXNvSdQbscbCOzqQFw0wh5ugPcDzF3UPjEP3W8
+
+### Create Task
+POST http://localhost:8000/api/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2EyYjcyZjM0NDhjZTViYTE1Yzc0YSIsImlhdCI6MTc1ODA4MDA2OSwiZXhwIjoxNzU4MTY2NDY5fQ.vp-ivWXNvSdQbscbCOzqQFw0wh5ugPcDzF3UPjEP3W8
+
+{
+  "title": "My First Task",
+  "description": "This is a test task"
+}
+
+### Update Task
+PUT http://localhost:8000/api/tasks/{{taskId}}
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2EyYjcyZjM0NDhjZTViYTE1Yzc0YSIsImlhdCI6MTc1ODA4MDA2OSwiZXhwIjoxNzU4MTY2NDY5fQ.vp-ivWXNvSdQbscbCOzqQFw0wh5ugPcDzF3UPjEP3W8
+
+{
+  "status": "done"
+}
+
+### Delete Task
+DELETE http://localhost:8000/api/tasks/{{taskId}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2EyYjcyZjM0NDhjZTViYTE1Yzc0YSIsImlhdCI6MTc1ODA4MDA2OSwiZXhwIjoxNzU4MTY2NDY5fQ.vp-ivWXNvSdQbscbCOzqQFw0wh5ugPcDzF3UPjEP3W8
