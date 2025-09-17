@@ -1,4 +1,5 @@
 A Task Manager Application
+
 The frontend is built with React (Vite) + Material UI, and the backend is built with Node.js + Express + MongoDB.
 
 ##  Installation
@@ -9,7 +10,9 @@ git clone https://github.com/shekhawatprateek/Task-Manager-App.git
 cd task-manager
 
 2. Backend Setup
+
 cd task-manager-backend
+
 npm install
 
 
@@ -30,8 +33,11 @@ npm run dev
 Backend runs at  http://localhost:8000
 
 3. Frontend Setup
+
 cd task-manager-frontend
+
 npm install
+
 npm run dev
 
 
