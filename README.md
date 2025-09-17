@@ -65,7 +65,7 @@ Response:
 
 { "token": "your-jwt-token" }
 
-Task Routes (/api/tasks) 🔒 Protected (require Authorization: Bearer <token>)
+Task Routes (/api/tasks) 
 
 GET /api/tasks?search=&status=all&page=1&limit=5
 Get tasks with optional search, filter, pagination.
@@ -84,31 +84,6 @@ Request:
 
 DELETE /api/tasks/:id
 
-🧪 Testing with REST Client (VS Code)
-
-If you have the REST Client extension in VS Code, create an api.rest file:
-
-### Register
-POST http://localhost:8000/api/auth/register
-Content-Type: application/json
-
-{
-  "email": "test@example.com",
-  "password": "123456"
-}
-
-### Login
-POST http://localhost:8000/api/auth/login
-Content-Type: application/json
-
-{
-  "email": "test@example.com",
-  "password": "123456"
-}
-
-### Get Tasks
-GET http://localhost:8000/api/tasks
-Authorization: Bearer {{token}}
 
 🎯 Usage
 
