@@ -1,6 +1,6 @@
 A Task Manager Application
 
-## 📦 Installation
+##  Installation
 
 1. Clone Repository
 
@@ -26,7 +26,7 @@ Run backend:
 npm run dev
 
 
-Backend runs at 👉 http://localhost:8000
+Backend runs at  http://localhost:8000
 
 3. Frontend Setup
 cd task-manager-frontend
@@ -34,9 +34,9 @@ npm install
 npm run dev
 
 
-Frontend runs at 👉 http://localhost:5173
+Frontend runs at  http://localhost:5173
 
-🔑 Authentication Flow
+ Authentication Flow
 
 Register at /register
 
@@ -46,7 +46,7 @@ After login, JWT is stored in localStorage
 
 Authenticated requests automatically include JWT in headers
 
-📡 API Endpoints
+ API Endpoints
 Auth Routes (/api/auth)
 
 POST /register → Register user
@@ -85,7 +85,7 @@ Request:
 DELETE /api/tasks/:id
 
 
-🎯 Usage
+ Usage
 
 Start backend (npm run dev in task-manager-backend)
 
