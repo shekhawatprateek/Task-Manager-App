@@ -4,6 +4,7 @@ export const getTasks = async (req, res) => {
   try {
     const { search, status, page = 1, limit = 5 } = req.query;
     const query = { userId: req.user };
+    console.log(query, "<><>line 7<><>")
 
     if (search) {
       query.$or = [
@@ -54,6 +55,7 @@ export const updateTask = async (req, res) => {
 export const deleteTask = async (req, res) => {
   try {
     const task = await Task.findOneAndDelete({ _id: req.params.id, userId: req.user });
+    // console.log("task >>", task)
     if (!task) return res.status(404).json({ message: "Task not found" });
     res.json({ message: "Task deleted" });
   } catch (error) {

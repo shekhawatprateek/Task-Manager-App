@@ -14,9 +14,11 @@ npm install
 
 Create a .env file inside task-manager-backend/:
 
-MONGOURI=your_mongodb_uri
-JWT_SECRET=your_secret_key
+MONGO_URI=mongodb+srv://prateekshekhawat7_db_user:prateek_task_app@taskmanager.dpqjebw.mongodb.net/
+JWT_SECRET=task_manager
 PORT=8000
+
+(Note: Actual Credential provided above for assignment purpose only)
 
 
 Run backend:
