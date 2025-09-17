@@ -1,4 +1,5 @@
 A Task Manager Application
+The frontend is built with React (Vite) + Material UI, and the backend is built with Node.js + Express + MongoDB.
 
 ##  Installation
 
