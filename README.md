@@ -19,7 +19,9 @@ npm install
 Create a .env file inside task-manager-backend/:
 
 MONGO_URI=mongodb+srv://prateekshekhawat7_db_user:prateek_task_app@taskmanager.dpqjebw.mongodb.net/
+
 JWT_SECRET=task_manager
+
 PORT=8000
 
 (Note: Actual Credential provided above for assignment purpose only)
@@ -43,7 +45,7 @@ npm run dev
 
 Frontend runs at  http://localhost:5173
 
- Authentication Flow
+ ---- Authentication Flow
 
 Register at /register
 
@@ -53,7 +55,7 @@ After login, JWT is stored in localStorage
 
 Authenticated requests automatically include JWT in headers
 
- API Endpoints
+ ------ API Endpoints
 Auth Routes (/api/auth)
 
 POST /register → Register user
@@ -68,7 +70,7 @@ Request:
 { "email": "test@example.com", "password": "123456" }
 
 
-Response:
+------ Response:
 
 { "token": "your-jwt-token" }
 
@@ -92,7 +94,7 @@ Request:
 DELETE /api/tasks/:id
 
 
- Usage
+------ Usage
 
 Start backend (npm run dev in task-manager-backend)
 
